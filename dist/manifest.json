@@ -1,0 +1,11 @@
+{
+	"id": "zoom11",
+	"name": "1:1 Zoom Button",
+	"version": "1.0.0",
+	"authors": [
+		"LittleEndu"
+	],
+	"versions": {
+		"framework": ">=0.1.0-beta"
+	}
+}
