@@ -1,7 +1,7 @@
 {
   "name": "zoom11",
   "short": "1:1 zoom button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "clean": "del-cli dist",
