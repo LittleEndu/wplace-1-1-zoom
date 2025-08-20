@@ -1,11 +1,5 @@
-declare module "plugin:patches" {
-  const patches: {
-    name: string;
-    find: string;
-    replace: {
-      match: RegExp;
-      replace: (orig: string, match: string) => string;
-    };
-  }[];
-  export default patches;
+declare module 'plugin:patches' {
+    import { Patch } from '@placecharity/framework-types';
+    const patches: Patch[];
+    export default patches;
 }

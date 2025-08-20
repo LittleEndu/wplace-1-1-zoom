@@ -1,8 +1,7 @@
 import { defineConfig } from 'rollup';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import terser from '@rollup/plugin-terser'
-import typescript from '@rollup/plugin-typescript';
+import esbuild from 'rollup-plugin-esbuild';
 import pkg from './package.json' with {type: 'json'};
 
 export default defineConfig({
@@ -46,7 +45,6 @@ export default defineConfig({
                 }
             }
         },
-        typescript(),
-        terser({ compress: { negate_iife: false, side_effects: false } })
+        esbuild({ minify: true })
     ],
 });
